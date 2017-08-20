@@ -24,8 +24,8 @@
     "copy-files": "^0.1.0",
     "immutable-css-cli": "^1.1.1",
     "normalize.css": "^7.0.0",
-    "tachyons-modules": "^1.1.10",
     "tachyons-cli": "^1.0.11",
+    "tachyons-modules": "^1.1.10",
     "watch": "^1.0.2"
   },
   "contributors": [
@@ -40,10 +40,23 @@
   ],
   "scripts": {
     "start": "npm run build:watch",
-    "mutations": "immutable-css src/tachyons.css --strict",
+    "mutations": "immutable-css src/reactual.css --strict",
     "build": "npm run build:css",
     "build:css": "tachyons src/reactual.css > css/reactual.css && cp css/reactual.css ../uix/docs/resources/",
     "build:minify": "tachyons src/reactual.css -m > css/reactual.min.css",
     "build:watch": "watch \"npm run build\" ./src/"
+  },
+  "resolutions": {
+    "lodash": "4.17.4",
+    "minimist": "1.2.0",
+    "file-exists": "2.0.0",
+    "is-blank": "1.1.0",
+    "postcss-import": "9.1.0",
+    "supports-color": "3.2.3",
+    "specificity": "0.3.1",
+    "css-selector-tokenizer": "0.7.0",
+    "balanced-match": "1.0.0",
+    "css-color-names": "0.0.4",
+    "color-convert": "1.9.0"
   }
 }
