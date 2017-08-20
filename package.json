@@ -41,9 +41,9 @@
   "scripts": {
     "start": "npm run build:watch",
     "mutations": "immutable-css src/tachyons.css --strict",
-    "build": "npm run build:css && npm run build:minify",
-    "build:css": "tachyons src/tachyons.css > css/tachyons.css",
-    "build:minify": "tachyons src/tachyons.css -m > css/tachyons.min.css",
+    "build": "npm run build:css",
+    "build:css": "tachyons src/reactual.css > css/reactual.css && cp css/reactual.css ../uix/docs/resources/",
+    "build:minify": "tachyons src/reactual.css -m > css/reactual.min.css",
     "build:watch": "watch \"npm run build\" ./src/"
   }
 }

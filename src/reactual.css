@@ -1,5 +1,14 @@
+/* Import latest build defaults */
 @import './tachyons';
 
-/* Reactual Customizations */
+/*
 
-@import './_colors_reactual.css'
+!Important!
+
+Reactual Customizations
+Don't modify the default _type.css files from tachyons, to not break updates, 
+only create new files with this format: _type_reactual.css
+
+*/
+
+@import './_colors_reactual';
